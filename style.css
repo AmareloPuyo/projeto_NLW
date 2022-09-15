@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(Fundo.jpg)top center no-repeat;
+    background-size: 100vw;
+    background-color: #121214;
+
+}
+
+header {
+    margin: 32px auto;
+    height: 120px;
+
+}
+
+header div {
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    padding: 4px;
+}
+
+header div:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+header img {
+    border-radius: 50%;
+    width: 120px;
+}
+
+section {
+    background-image: linear-gradient(90deg, #9472fc 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 10px;
+    width: 580px;
+    margin: auto;
+    margin-bottom: 24px;
+    padding-top: 3px;
+
+}
+
+div {
+    background-color: #2a2634;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
+    box-sizing: border-box;
+}
+
+div h2 {
+    color: #FFFFFF;
+    line-height: 38.4px;
+    letter-spacing: -0.47px;
+
+}
+
+div p {
+    color: #A1A1AA;
+    line-height: 25.6px;
+    letter-spacing: -0.18px;
+    margin-bottom: 24px;
+}
+
+div ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.jogos img {
+    border-radius: 8px;
+    height: 120px;
+    width: 90px;
+    margin-right: 16px;
+}
+
+.jogos img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.canais img {
+    border-radius: 50%;
+    border: 0.5px solid white;
+    height: 70px;
+    width: 70px;
+    margin-right: 16px;
+}
+
+.redes img {
+    margin-right: 16px;
+
+}
+
+.canais img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/*animation*/
+
+header div {
+    animation: fromTop 0.7s backwards;
+    animation-delay: 0.1s;
+}
+
+main section:nth-child(1) {
+    animation: fromLeft 0.7s backwards;
+    animation-delay: 0.3s;
+}
+
+main section:nth-child(2) {
+    animation: fromLeft 0.7s backwards;
+    animation-delay: 0.6s;
+}
+
+main section:nth-child(3) {
+    animation: fromLeft 0.7s backwards;
+    animation-delay: 0.9s;
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translatex(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translatey(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
